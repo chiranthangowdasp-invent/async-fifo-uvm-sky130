@@ -1,0 +1,14 @@
+{
+  "DESIGN_NAME": "async_fifo",
+  "VERILOG_FILES": [
+    "dir::../rtl/sync_2ff.v",
+    "dir::../rtl/fifo_mem.v",
+    "dir::../rtl/wptr_full.v",
+    "dir::../rtl/rptr_empty.v",
+    "dir::../rtl/async_fifo.v"
+  ],
+  "CLOCK_PORT": ["wclk", "rclk"],
+  "CLOCK_PERIOD": 10.0,
+  "PNR_SDC_FILE": "dir::fifo.sdc",
+  "SIGNOFF_SDC_FILE": "dir::fifo.sdc"
+}

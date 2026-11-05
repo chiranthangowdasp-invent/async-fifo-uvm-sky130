@@ -1,0 +1,271 @@
+# ** Note: (vsim-220) 'C:/altera_pro/26.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -c -l logs\fast_write_slow_read_test.log -wlf logs\fast_write_slow_read_test.wlf -voptargs="+acc" work.tb_top "+UVM_TESTNAME=fast_write_slow_read_test" -do "run -all; quit -f" 
+# Start time: 17:25:57 on Nov 05,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.3 win64 Sep 15 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.fifo_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.fifo_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.tb_top(fast)
+# Loading work.fifo_if(fast__2)
+# Loading work.async_fifo(fast)
+# Loading work.sync_2ff(fast)
+# Loading work.fifo_mem(fast)
+# Loading work.wptr_full(fast)
+# Loading work.rptr_empty(fast)
+# Loading C:/altera_pro/26.1/questa_fse/uvm-1.1d\win64\uvm_dpi.dll
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test fast_write_slow_read_test...
+# UVM_INFO tb/fifo_tests.sv(169) @ 0: uvm_test_top [TEST] fast_write_slow_read_test: 250 MHz write, 50 MHz read, 64 words
+# UVM_INFO tb/write_agent.sv(63) @ 168000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x33
+# UVM_INFO tb/write_agent.sv(63) @ 180000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xa6
+# UVM_INFO tb/write_agent.sv(63) @ 188000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x67
+# UVM_INFO tb/write_agent.sv(63) @ 196000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x73
+# UVM_INFO tb/write_agent.sv(63) @ 200000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xd5
+# UVM_INFO tb/write_agent.sv(63) @ 216000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xdd
+# UVM_INFO tb/write_agent.sv(63) @ 220000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x1a
+# UVM_INFO tb/write_agent.sv(63) @ 228000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x48
+# UVM_INFO tb/write_agent.sv(63) @ 240000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x86
+# UVM_INFO tb/read_agent.sv(60) @ 246000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x33
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 246000: uvm_test_top.env.scb [SCB] match 0x33
+# UVM_INFO tb/write_agent.sv(63) @ 256000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x0f
+# UVM_INFO tb/write_agent.sv(63) @ 272000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x33
+# UVM_INFO tb/read_agent.sv(60) @ 286000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xa6
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 286000: uvm_test_top.env.scb [SCB] match 0xa6
+# UVM_INFO tb/write_agent.sv(63) @ 288000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x33
+# UVM_INFO tb/write_agent.sv(63) @ 304000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x36
+# UVM_INFO tb/write_agent.sv(63) @ 312000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x83
+# UVM_INFO tb/write_agent.sv(63) @ 328000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xb4
+# UVM_INFO tb/write_agent.sv(63) @ 340000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x22
+# UVM_INFO tb/read_agent.sv(60) @ 346000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x67
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 346000: uvm_test_top.env.scb [SCB] match 0x67
+# UVM_INFO tb/write_agent.sv(63) @ 352000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xc0
+# UVM_INFO tb/read_agent.sv(60) @ 366000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x73
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 366000: uvm_test_top.env.scb [SCB] match 0x73
+# UVM_INFO tb/write_agent.sv(63) @ 368000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x08
+# UVM_INFO tb/write_agent.sv(63) @ 376000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x6f
+# UVM_INFO tb/write_agent.sv(63) @ 380000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x19
+# UVM_INFO tb/read_agent.sv(60) @ 406000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xd5
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 406000: uvm_test_top.env.scb [SCB] match 0xd5
+# UVM_INFO tb/write_agent.sv(63) @ 420000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xb8
+# UVM_INFO tb/read_agent.sv(60) @ 446000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xdd
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 446000: uvm_test_top.env.scb [SCB] match 0xdd
+# UVM_INFO tb/write_agent.sv(63) @ 460000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xb7
+# UVM_INFO tb/read_agent.sv(60) @ 466000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x1a
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 466000: uvm_test_top.env.scb [SCB] match 0x1a
+# UVM_INFO tb/write_agent.sv(63) @ 480000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xff
+# UVM_INFO tb/read_agent.sv(60) @ 526000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x48
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 526000: uvm_test_top.env.scb [SCB] match 0x48
+# UVM_INFO tb/write_agent.sv(63) @ 540000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x8e
+# UVM_INFO tb/read_agent.sv(60) @ 546000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x86
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 546000: uvm_test_top.env.scb [SCB] match 0x86
+# UVM_INFO tb/write_agent.sv(63) @ 560000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x94
+# UVM_INFO tb/read_agent.sv(60) @ 626000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x0f
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 626000: uvm_test_top.env.scb [SCB] match 0x0f
+# UVM_INFO tb/write_agent.sv(63) @ 640000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x22
+# UVM_INFO tb/read_agent.sv(60) @ 706000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x33
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 706000: uvm_test_top.env.scb [SCB] match 0x33
+# UVM_INFO tb/write_agent.sv(63) @ 720000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xfd
+# UVM_INFO tb/read_agent.sv(60) @ 726000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x33
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 726000: uvm_test_top.env.scb [SCB] match 0x33
+# UVM_INFO tb/write_agent.sv(63) @ 740000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x5f
+# UVM_INFO tb/read_agent.sv(60) @ 746000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x36
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 746000: uvm_test_top.env.scb [SCB] match 0x36
+# UVM_INFO tb/write_agent.sv(63) @ 760000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xf3
+# UVM_INFO tb/read_agent.sv(60) @ 826000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x83
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 826000: uvm_test_top.env.scb [SCB] match 0x83
+# UVM_INFO tb/write_agent.sv(63) @ 840000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x4f
+# UVM_INFO tb/read_agent.sv(60) @ 906000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xb4
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 906000: uvm_test_top.env.scb [SCB] match 0xb4
+# UVM_INFO tb/write_agent.sv(63) @ 920000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x08
+# UVM_INFO tb/read_agent.sv(60) @ 926000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x22
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 926000: uvm_test_top.env.scb [SCB] match 0x22
+# UVM_INFO tb/write_agent.sv(63) @ 940000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x70
+# UVM_INFO tb/read_agent.sv(60) @ 946000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xc0
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 946000: uvm_test_top.env.scb [SCB] match 0xc0
+# UVM_INFO tb/write_agent.sv(63) @ 960000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xc3
+# UVM_INFO tb/read_agent.sv(60) @ 986000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x08
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 986000: uvm_test_top.env.scb [SCB] match 0x08
+# UVM_INFO tb/write_agent.sv(63) @ 1000000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x2a
+# UVM_INFO tb/read_agent.sv(60) @ 1046000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x6f
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1046000: uvm_test_top.env.scb [SCB] match 0x6f
+# UVM_INFO tb/write_agent.sv(63) @ 1060000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x0e
+# UVM_INFO tb/read_agent.sv(60) @ 1086000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x19
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1086000: uvm_test_top.env.scb [SCB] match 0x19
+# UVM_INFO tb/write_agent.sv(63) @ 1100000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x75
+# UVM_INFO tb/read_agent.sv(60) @ 1166000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xb8
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1166000: uvm_test_top.env.scb [SCB] match 0xb8
+# UVM_INFO tb/write_agent.sv(63) @ 1180000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x22
+# UVM_INFO tb/read_agent.sv(60) @ 1226000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xb7
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1226000: uvm_test_top.env.scb [SCB] match 0xb7
+# UVM_INFO tb/write_agent.sv(63) @ 1240000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xfd
+# UVM_INFO tb/read_agent.sv(60) @ 1266000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xff
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1266000: uvm_test_top.env.scb [SCB] match 0xff
+# UVM_INFO tb/write_agent.sv(63) @ 1280000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x3a
+# UVM_INFO tb/read_agent.sv(60) @ 1346000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x8e
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1346000: uvm_test_top.env.scb [SCB] match 0x8e
+# UVM_INFO tb/write_agent.sv(63) @ 1360000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xcd
+# UVM_INFO tb/read_agent.sv(60) @ 1386000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x94
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1386000: uvm_test_top.env.scb [SCB] match 0x94
+# UVM_INFO tb/write_agent.sv(63) @ 1400000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xbe
+# UVM_INFO tb/read_agent.sv(60) @ 1466000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x22
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1466000: uvm_test_top.env.scb [SCB] match 0x22
+# UVM_INFO tb/write_agent.sv(63) @ 1480000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xd0
+# UVM_INFO tb/read_agent.sv(60) @ 1486000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xfd
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1486000: uvm_test_top.env.scb [SCB] match 0xfd
+# UVM_INFO tb/write_agent.sv(63) @ 1500000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x1b
+# UVM_INFO tb/read_agent.sv(60) @ 1546000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x5f
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1546000: uvm_test_top.env.scb [SCB] match 0x5f
+# UVM_INFO tb/write_agent.sv(63) @ 1560000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x83
+# UVM_INFO tb/read_agent.sv(60) @ 1606000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xf3
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1606000: uvm_test_top.env.scb [SCB] match 0xf3
+# UVM_INFO tb/write_agent.sv(63) @ 1620000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xdc
+# UVM_INFO tb/read_agent.sv(60) @ 1626000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x4f
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1626000: uvm_test_top.env.scb [SCB] match 0x4f
+# UVM_INFO tb/write_agent.sv(63) @ 1640000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xa0
+# UVM_INFO tb/read_agent.sv(60) @ 1706000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x08
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1706000: uvm_test_top.env.scb [SCB] match 0x08
+# UVM_INFO tb/write_agent.sv(63) @ 1720000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x9f
+# UVM_INFO tb/read_agent.sv(60) @ 1726000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x70
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1726000: uvm_test_top.env.scb [SCB] match 0x70
+# UVM_INFO tb/write_agent.sv(63) @ 1740000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xb4
+# UVM_INFO tb/read_agent.sv(60) @ 1786000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xc3
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1786000: uvm_test_top.env.scb [SCB] match 0xc3
+# UVM_INFO tb/write_agent.sv(63) @ 1800000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xfb
+# UVM_INFO tb/read_agent.sv(60) @ 1826000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x2a
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1826000: uvm_test_top.env.scb [SCB] match 0x2a
+# UVM_INFO tb/write_agent.sv(63) @ 1840000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x7a
+# UVM_INFO tb/read_agent.sv(60) @ 1906000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x0e
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1906000: uvm_test_top.env.scb [SCB] match 0x0e
+# UVM_INFO tb/write_agent.sv(63) @ 1920000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x11
+# UVM_INFO tb/read_agent.sv(60) @ 1986000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x75
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1986000: uvm_test_top.env.scb [SCB] match 0x75
+# UVM_INFO tb/write_agent.sv(63) @ 2000000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x98
+# UVM_INFO tb/read_agent.sv(60) @ 2026000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x22
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2026000: uvm_test_top.env.scb [SCB] match 0x22
+# UVM_INFO tb/write_agent.sv(63) @ 2040000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x51
+# UVM_INFO tb/read_agent.sv(60) @ 2106000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xfd
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2106000: uvm_test_top.env.scb [SCB] match 0xfd
+# UVM_INFO tb/write_agent.sv(63) @ 2120000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xf3
+# UVM_INFO tb/read_agent.sv(60) @ 2126000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x3a
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2126000: uvm_test_top.env.scb [SCB] match 0x3a
+# UVM_INFO tb/write_agent.sv(63) @ 2140000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x30
+# UVM_INFO tb/read_agent.sv(60) @ 2186000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xcd
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2186000: uvm_test_top.env.scb [SCB] match 0xcd
+# UVM_INFO tb/write_agent.sv(63) @ 2200000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xb9
+# UVM_INFO tb/read_agent.sv(60) @ 2226000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xbe
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2226000: uvm_test_top.env.scb [SCB] match 0xbe
+# UVM_INFO tb/write_agent.sv(63) @ 2240000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x21
+# UVM_INFO tb/read_agent.sv(60) @ 2306000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xd0
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2306000: uvm_test_top.env.scb [SCB] match 0xd0
+# UVM_INFO tb/write_agent.sv(63) @ 2320000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x33
+# UVM_INFO tb/read_agent.sv(60) @ 2346000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x1b
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2346000: uvm_test_top.env.scb [SCB] match 0x1b
+# UVM_INFO tb/write_agent.sv(63) @ 2360000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x6f
+# UVM_INFO tb/read_agent.sv(60) @ 2406000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x83
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2406000: uvm_test_top.env.scb [SCB] match 0x83
+# UVM_INFO tb/write_agent.sv(63) @ 2420000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xfa
+# UVM_INFO tb/read_agent.sv(60) @ 2426000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xdc
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2426000: uvm_test_top.env.scb [SCB] match 0xdc
+# UVM_INFO tb/write_agent.sv(63) @ 2440000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x4e
+# UVM_INFO tb/read_agent.sv(60) @ 2506000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xa0
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2506000: uvm_test_top.env.scb [SCB] match 0xa0
+# UVM_INFO tb/write_agent.sv(63) @ 2520000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xff
+# UVM_INFO tb/read_agent.sv(60) @ 2566000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x9f
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2566000: uvm_test_top.env.scb [SCB] match 0x9f
+# UVM_INFO tb/write_agent.sv(63) @ 2580000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x3a
+# UVM_INFO tb/read_agent.sv(60) @ 2586000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xb4
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2586000: uvm_test_top.env.scb [SCB] match 0xb4
+# UVM_INFO tb/write_agent.sv(63) @ 2600000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xb6
+# UVM_INFO tb/read_agent.sv(60) @ 2626000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xfb
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2626000: uvm_test_top.env.scb [SCB] match 0xfb
+# UVM_INFO tb/read_agent.sv(60) @ 2706000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x7a
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2706000: uvm_test_top.env.scb [SCB] match 0x7a
+# UVM_INFO tb/read_agent.sv(60) @ 2726000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x11
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2726000: uvm_test_top.env.scb [SCB] match 0x11
+# UVM_INFO tb/read_agent.sv(60) @ 2786000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x98
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2786000: uvm_test_top.env.scb [SCB] match 0x98
+# UVM_INFO tb/read_agent.sv(60) @ 2866000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x51
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2866000: uvm_test_top.env.scb [SCB] match 0x51
+# UVM_INFO tb/read_agent.sv(60) @ 2926000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xf3
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2926000: uvm_test_top.env.scb [SCB] match 0xf3
+# UVM_INFO tb/read_agent.sv(60) @ 2986000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x30
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 2986000: uvm_test_top.env.scb [SCB] match 0x30
+# UVM_INFO tb/read_agent.sv(60) @ 3046000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xb9
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 3046000: uvm_test_top.env.scb [SCB] match 0xb9
+# UVM_INFO tb/read_agent.sv(60) @ 3106000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x21
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 3106000: uvm_test_top.env.scb [SCB] match 0x21
+# UVM_INFO tb/read_agent.sv(60) @ 3146000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x33
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 3146000: uvm_test_top.env.scb [SCB] match 0x33
+# UVM_INFO tb/read_agent.sv(60) @ 3186000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x6f
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 3186000: uvm_test_top.env.scb [SCB] match 0x6f
+# UVM_INFO tb/read_agent.sv(60) @ 3246000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xfa
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 3246000: uvm_test_top.env.scb [SCB] match 0xfa
+# UVM_INFO tb/read_agent.sv(60) @ 3306000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x4e
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 3306000: uvm_test_top.env.scb [SCB] match 0x4e
+# UVM_INFO tb/read_agent.sv(60) @ 3326000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xff
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 3326000: uvm_test_top.env.scb [SCB] match 0xff
+# UVM_INFO tb/read_agent.sv(60) @ 3366000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x3a
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 3366000: uvm_test_top.env.scb [SCB] match 0x3a
+# UVM_INFO tb/read_agent.sv(60) @ 3426000: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xb6
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 3426000: uvm_test_top.env.scb [SCB] match 0xb6
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 3526000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO tb/fifo_scoreboard.sv(56) @ 3526000: uvm_test_top.env.scb [SCB] SUMMARY writes=64 reads=64 errors=0
+# UVM_INFO tb/fifo_tests.sv(67) @ 3526000: uvm_test_top [TEST] blocked write attempts=441, blocked read attempts=3
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  199
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RMON]    64
+# [RNTST]     1
+# [SCB]    65
+# [TEST]     2
+# [TEST_DONE]     1
+# [WMON]    64
+# ** Note: $finish    : C:/altera_pro/26.1/questa_fse/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 3526 ns  Iteration: 54  Instance: /tb_top
+# End time: 17:26:00 on Nov 05,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

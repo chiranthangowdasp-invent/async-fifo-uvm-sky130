@@ -1,0 +1,21 @@
+%Warning-WIDTHEXPAND: /home/chiru/async_fifo/rtl/rptr_empty.v:11:49: Operator AND expects 5 bits on the LHS, but LHS's VARREF 'rinc' generates 1 bits.
+                                                                   : ... note: In instance 'async_fifo.u_rptr'
+   11 |   wire [ADDR_WIDTH:0] rbin_next  = rbin + (rinc & ~rempty);
+      |                                                 ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.044
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: /home/chiru/async_fifo/rtl/rptr_empty.v:11:51: Operator NOT expects 5 bits on the LHS, but LHS's VARREF 'rempty' generates 1 bits.
+                                                                   : ... note: In instance 'async_fifo.u_rptr'
+   11 |   wire [ADDR_WIDTH:0] rbin_next  = rbin + (rinc & ~rempty);
+      |                                                   ^
+%Warning-WIDTHEXPAND: /home/chiru/async_fifo/rtl/wptr_full.v:11:49: Operator AND expects 5 bits on the LHS, but LHS's VARREF 'winc' generates 1 bits.
+                                                                  : ... note: In instance 'async_fifo.u_wptr'
+   11 |   wire [ADDR_WIDTH:0] wbin_next  = wbin + (winc & ~wfull);
+      |                                                 ^
+%Warning-WIDTHEXPAND: /home/chiru/async_fifo/rtl/wptr_full.v:11:51: Operator NOT expects 5 bits on the LHS, but LHS's VARREF 'wfull' generates 1 bits.
+                                                                  : ... note: In instance 'async_fifo.u_wptr'
+   11 |   wire [ADDR_WIDTH:0] wbin_next  = wbin + (winc & ~wfull);
+      |                                                   ^
+- V e r i l a t i o n   R e p o r t: Verilator 5.044 2026-01-01 rev v5.040
+- Verilator: Built from 1.151 MB sources in 452 modules, into 0.024 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.059 s (elab=0.013, cvt=0.006, bld=0.000); cpu 0.057 s on 1 threads; alloced 28.141 MB

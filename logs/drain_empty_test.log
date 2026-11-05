@@ -1,0 +1,109 @@
+# ** Note: (vsim-220) 'C:/altera_pro/26.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -c -l logs\drain_empty_test.log -wlf logs\drain_empty_test.wlf -voptargs="+acc" work.tb_top "+UVM_TESTNAME=drain_empty_test" -do "run -all; quit -f" 
+# Start time: 17:25:53 on Nov 05,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.3 win64 Sep 15 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.fifo_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.fifo_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.tb_top(fast)
+# Loading work.fifo_if(fast__2)
+# Loading work.async_fifo(fast)
+# Loading work.sync_2ff(fast)
+# Loading work.fifo_mem(fast)
+# Loading work.wptr_full(fast)
+# Loading work.rptr_empty(fast)
+# Loading C:/altera_pro/26.1/questa_fse/uvm-1.1d\win64\uvm_dpi.dll
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test drain_empty_test...
+# UVM_INFO tb/fifo_tests.sv(133) @ 0: uvm_test_top [TEST] drain_empty_test: drain, under-read, then reuse the FIFO
+# UVM_INFO tb/write_agent.sv(63) @ 195000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xae
+# UVM_INFO tb/write_agent.sv(63) @ 215000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xad
+# UVM_INFO tb/write_agent.sv(63) @ 245000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xe2
+# UVM_INFO tb/write_agent.sv(63) @ 275000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xe3
+# UVM_INFO tb/write_agent.sv(63) @ 295000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x2f
+# UVM_INFO tb/write_agent.sv(63) @ 315000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x30
+# UVM_INFO tb/read_agent.sv(60) @ 448500: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xae
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 448500: uvm_test_top.env.scb [SCB] match 0xae
+# UVM_INFO tb/read_agent.sv(60) @ 474500: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xad
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 474500: uvm_test_top.env.scb [SCB] match 0xad
+# UVM_INFO tb/read_agent.sv(60) @ 526500: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xe2
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 526500: uvm_test_top.env.scb [SCB] match 0xe2
+# UVM_INFO tb/read_agent.sv(60) @ 539500: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xe3
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 539500: uvm_test_top.env.scb [SCB] match 0xe3
+# UVM_INFO tb/read_agent.sv(60) @ 565500: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x2f
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 565500: uvm_test_top.env.scb [SCB] match 0x2f
+# UVM_INFO tb/read_agent.sv(60) @ 578500: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x30
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 578500: uvm_test_top.env.scb [SCB] match 0x30
+# UVM_INFO tb/write_agent.sv(63) @ 905000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x6b
+# UVM_INFO tb/write_agent.sv(63) @ 935000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x82
+# UVM_INFO tb/write_agent.sv(63) @ 965000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0xd7
+# UVM_INFO tb/write_agent.sv(63) @ 995000: uvm_test_top.env.wagent.mon [WMON] write accepted data=0x1d
+# UVM_INFO tb/read_agent.sv(60) @ 1111500: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x6b
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1111500: uvm_test_top.env.scb [SCB] match 0x6b
+# UVM_INFO tb/read_agent.sv(60) @ 1124500: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x82
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1124500: uvm_test_top.env.scb [SCB] match 0x82
+# UVM_INFO tb/read_agent.sv(60) @ 1150500: uvm_test_top.env.ragent.mon [RMON] read accepted data=0xd7
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1150500: uvm_test_top.env.scb [SCB] match 0xd7
+# UVM_INFO tb/read_agent.sv(60) @ 1176500: uvm_test_top.env.ragent.mon [RMON] read accepted data=0x1d
+# UVM_INFO tb/fifo_scoreboard.sv(43) @ 1176500: uvm_test_top.env.scb [SCB] match 0x1d
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 1276500: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO tb/fifo_scoreboard.sv(56) @ 1276500: uvm_test_top.env.scb [SCB] SUMMARY writes=10 reads=10 errors=0
+# UVM_INFO tb/fifo_tests.sv(67) @ 1276500: uvm_test_top [TEST] blocked write attempts=0, blocked read attempts=3
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   37
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RMON]    10
+# [RNTST]     1
+# [SCB]    11
+# [TEST]     2
+# [TEST_DONE]     1
+# [WMON]    10
+# ** Note: $finish    : C:/altera_pro/26.1/questa_fse/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1276500 ps  Iteration: 54  Instance: /tb_top
+# End time: 17:25:55 on Nov 05,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
